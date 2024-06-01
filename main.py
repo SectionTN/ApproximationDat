@@ -48,6 +48,7 @@ def afficher():
             window.table.insertRow(i)
             window.table.setItem(i, 0, QTableWidgetItem(str(e["x"])))
             window.table.setItem(i, 1, QTableWidgetItem(str(e["RC"])))
+            i += 1
     except:
         eof = True
         file.close()
